@@ -29,13 +29,11 @@ function showMovies (movie) {
         movieEl.innerHTML = `
             <img src="${IMG_PATH + poster_path}" alt=${title}>
             <div class="movie-info"> 
-            <span  if(vote_average>=8 && vote_average<=10){
-                class= "green"
-            }else if(vote_average>=5 && vote_average<8){
-                class = "yellow"
-             }else{
-                class= "red"
-            }>${vote_average}</span>
+            <span  class="${vote_average>=8 && vote_average<=10 ? 
+            "green" : 
+            vote_average>=5 && vote_average<8 ? 
+            "yellow" :  
+            "red"}" >${vote_average}</span>
             <h3>${title}</h3>
             <p>${overview}</p>
             </div>

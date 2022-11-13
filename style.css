@@ -46,15 +46,15 @@ main {
     padding: 15px;
     font-weight: 600;
 }
-#green{
+.green{
     background-color: green;
     border-radius: 2px;
 }
-#yellow{
+.yellow{
     background-color: yellow;
     border-radius: 2px;
 }
-#red{
+.red{
     background-color: red;
     border-radius: 2px;
 }
